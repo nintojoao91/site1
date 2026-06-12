@@ -27,9 +27,14 @@
     <section id="Sobre">
         <H2>Sobre mim</H2>
         <button><img src="https://impulso06.com/wp-content/uploads/2024/03/Como-las-TIC-estan-revolucionando-la-educacion-en-2024.png"
-            alt="imagem principal" title="imagem de estudante de TI"></button> <!--para tornar um texto ou imagem clicavel use button-->
+        <button><img
+                src="https://impulso06.com/wp-content/uploads/2024/03/Como-las-TIC-estan-revolucionando-la-educacion-en-2024.png"
+                alt="imagem principal" title="imagem de estudante de TI"></button>
+        <!--para tornar um texto ou imagem clicavel use button-->
         <article>
-            <p>Eu sou estudante da universidade Federal do Rio grande do Sul,também estou estudando o curso de programação Front-end e Back-end, no SCTCH Santa catarina, Já desenvolvi algumas habilidades de criação de codigos para sites.</p> 
+            <p>Eu sou estudante da universidade Federal do Rio grande do Sul,também estou estudando o curso de
+                programação Front-end e Back-end, no SCTCH Santa catarina, Já desenvolvi algumas habilidades de criação
+                de codigos para sites.</p>
         </article>
         <aside>
             <h3>Habilidade digital</h3>
@@ -59,22 +64,39 @@
                 <!-- se colocar "a href "mais numero ou email" será clicavel e direcionado a ligar ou enviar msm por email-->
                 <p>para receber mais informações insira os seus dados e conttos no formulário assegir </p>
                 <form action="">
-                    <label for="nome">Nome completo: </label>
-                    <input type="text" id="Nome" name="nome"><br> <br>
-                    <label for="e-mail">e-mail: </label>
-                    <input type="email" id="e-mail" name="e-mail"> <br> <br>
-                    <label for="telefone">telefone: </label>
-                    <input type="tel" id="telefone" name="telefone"><br> <br>
-
-                    <label for="mensagem">mensagem: </label>
-                    <textarea name="mensagem" id="mensagem" cols="20px" rows="6x"></textarea> <br> <br>
+                    <label for="nome">Nome completo: </label><br>
+                    <input type="text" id="Nome" name="nome" required><br>
+                    <label for="e-mail">E-mail: </label><br>
+                    <input type="email" id="e-mail" name="e-mail" required> <br>
+                    <label for="telefone">Telefone: </label><br>
+                    <input type="tel" id="telefone" name="telefone" required><br>
                     <label for="assunto">Assunto: </label>
-                    <select name="assunto" id="assunto">
-                       <option value="orcamento">Orçamento</option>
-                       <option value="duvida">Duvida</option>
-                       <option value="outro">outro</option>
+                    <select name="assunto" id="assunto" required>
+                        <option value="orcamento">Orçamento</option>
+                        <option value="duvida">Duvida</option>
+                        <option value="outro">outro</option>
                     </select>
-                      
+                    <p>escolhe a opção a que se mais interessa </p>
+                        <input type="radio" id="html" name="fav_language" value="HTML">
+                        <label for="html">HTML</label><br>
+                        <input type="radio" id="css" name="fav_language" value="CSS">
+                        <label for="css">CSS</label><br>
+                        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                        <label for="javascript">JavaScript</label>
+                    <br>
+                    <label for="mensagem">Mensagem: </label><br>
+                    <textarea name="mensagem" id="mensagem" cols="20px" rows="6x" required></textarea>
+
+                    <br>
+
+                    <input type="checkbox">
+                    <label for="checkbox"> Deseja receber a nossa mensagem de a-mail sempre que temos novas
+                        informações</label>
+                    <br>
+                    
+                    <input type="submit" value="enviar mensagem">
+
+
                 </form>
             </address>
         </section>
