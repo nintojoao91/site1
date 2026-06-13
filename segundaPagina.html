@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Segunda pagina</title>
 </head>
+
 <body>
     <header>
         <h1>Segunda pagina Web</h1>
@@ -16,43 +18,63 @@
             E-mail: <a href="nintojoao91@gmail.com">nintojoao91@gmail.com</a> <br>
             Telefone: <a href="tel">85999297559</a>
         </address>
-        
+
         <h4>Minha formação</h4>
         <article>
-            <p>Sou graduado em letras Lingua Portuguesa, pela universidade da Integração Internacional da lusofonia Afro-brasileira - UNILAB, 
+            <p>Sou graduado em letras Lingua Portuguesa, pela universidade da Integração Internacional da lusofonia
+                Afro-brasileira - UNILAB,
                 mestre e doutorando em Letras lingua Portuguesa sob linha de pesquisa Linguistica Aplicada,
-                pela Universidade Federal do Rio Grande do Sul - UFRGS. Atualmente, estudo programação Front-end do SCTECH Santa Catarina.   
+                pela Universidade Federal do Rio Grande do Sul - UFRGS. Atualmente, estudo programação Front-end do
+                SCTECH Santa Catarina.
             </p>
         </article>
-        
+
     </section>
     <section>
         <h4>Candidatura </h4>
-        <p>Selecione a opção da sua candidatura a seguir:</p>
+
         <form action="">
+            <label for="nome">Nome</label><br>
+            <input type="text" id="nome" name="nome" required><br>
+            <label for="idade">Data de nascimento</label><br>
+            <input type="date" id="Idade" name="Idade" required><br>
+            <label for="e-mail">E-mail</label><br>
+            <input type="e-mail" id="e-mail" name="e-mail" required><br>
+            <label for="mensagem"> Descrição</label><br>
+            <textarea name="mensagem" id="mensagem" required></textarea>
+
+            <p>Selecione a opção asseguir para qual está candidatar-se para lecionar:</p>
             <label for="option">Opção de candidatura: </label>
-        <select name="option" id="option">
-            <option value="Portugues">Português</option>
-            <option value="matematica">matematica</option>
-            <option value="historia">historia</option>
-            <option value="geografia">geografia</option>
-            <option value="ciencias">ciencias</option>
-            <option value="artes">artes</option>
-            <option value="outros">outros</option>
-        </select>
-        <h4>Opção nivel de escolaridade</h4>
-        <label for="Opção de nivel de Escolaridade">Nivel de Escolaridade</label>
-        <select name="Opção de nivel de Escolaridade" id="Opção de nivel de Escolaridade">
-            <option value="Ensino superior completo"> ensino superior completo</option>
-            <option value="Cursando mestrado">mestrado completo</option>
-            <option value="Mestrado completo"> ensino completo</option>
-            <option value="Cursando doutorado">Cursando doutorado</option>
-            <option value="Doutorado completo">doutorado completo</option>
-        </select>
-        <br>
-        <input type="submit">
+            <select name="option" id="option" required>
+                <option value="Portugues">Português</option>
+                <option value="matematica">matematica</option>
+                <option value="historia">historia</option>
+                <option value="geografia">geografia</option>
+                <option value="ciencias">ciencias</option>
+                <option value="artes">artes</option>
+                <option value="outros">outros</option>
+            </select><br>
+            <label for="option">Opão de turno</label>
+            <select name="option" id="option" required>
+                <option value="manha">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
+            </select>
+
+            <h4>Opção nivel de escolaridade</h4>
+            <label for="Opção de nivel de Escolaridade">Nivel de Escolaridade</label>
+            <select name="Opção de nivel de Escolaridade" id="Opção de nivel de Escolaridade">
+                <option value="Ensino superior completo"> ensino superior completo</option>
+                <option value="Cursando mestrado">mestrado completo</option>
+                <option value="Mestrado completo"> ensino completo</option>
+                <option value="Cursando doutorado">Cursando doutorado</option>
+                <option value="Doutorado completo">doutorado completo</option>
+            </select>
+            <br>
+            <input type="submit">
         </form>
 
     </section>
 </body>
+
 </html>
